@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">SafeTrip</string>
+
+    <string name="mapbox_access_token">pk.eyJ1IjoidG9ieXR0ciIsImEiOiJja2x3eWlxaHMxb2RjMnBwM2NjOWgxZDNxIn0.ag3gS-bQckakDnbeUjXsZg</string>
+
+    <string name="user_location_permission_explanation">Vi trenger din posisjon for å kunne gi deg den beste opplevelsen i appen.</string>
+
+    <string name="user_location_permission_not_granted">Du ga oss ikke tillgang til din posisjon, og vi liker personvern, men du kan alltids skru på stedstjenester igjen</string>
+
+    <string name="search_for_location_no">Søk på sted</string>
+
+    <string name="lat">Lat</string>
+
+    <string name="lon">Lon</string>
+
+    <string name="latCaps">LAT</string>
+
+    <string name="lonCaps">LON</string>
+
+    <string name="time">TIDSPUNKT</string>
+
+    <string name="time_value_placeholder">10:25</string>
+
+    <string name="mob_emergency_number">NØDNUMMER:</string>
+
+    <string name="navigation_emergency_title">Nødinfo</string>
+
+    <string name="navigation_weather_list_title">Oversikt</string>
+
+    <string name="navigation_weather_profile_title">Preferanser</string>
+
+    <string name="navigation_settings_title">Innstillinger</string>
+
+    <string name="navigation_map_title">Kart</string>
+
+    <string name="place_name_placeholder">Stedsnavn</string>
+
+    <string name="latitude_placeholder">59.11827</string>
+
+    <string name="longitude_placeholder">10.89045</string>
+
+    <string name="precipitation_placeholder">10.0</string>
+
+    <string name="precipitation_unit">mm</string>
+
+    <string name="wave_height_placeholder">2</string>
+
+    <string name="wave_height_unit">m</string>
+
+    <string name="wind_speed_placeholder">10</string>
+
+    <string name="wind_speed_unit">m/s</string>
+
+    <string name="temperature_placeholder">11</string>
+
+    <string name="temperature_unit">°C</string>
+
+    <string name="precipitation_icon_content_description">Precipitation icon</string>
+
+    <string name="wave_icon_content_description">Wave height icon</string>
+
+    <string name="wind_icon_content_description">Wind speed icon</string>
+
+    <string name="temperature_icon_content_description">Temperature icon</string>
+
+    <string name="alert_icon_content_description">Alerts active icon</string>
+
+    <string name="expand_icon_content_description">Expand view icon</string>
+
+    <string name="color_mark_icon_content_description">Color mark icon</string>
+
+    <string name="alert_header">Farevarsel</string>
+
+    <string name="instruction_header">Anbefaling</string>
+
+    <string name="consequence_header">Konsekvenser</string>
+
+    <string name="time_period_header">Tidsperiode</string>
+
+    <string name="alert_placeholder">Nordlig sterk kuling 20 m/s, gjelder for område A2.</string>
+
+    <string name="instruction_placeholder">Ikke dra ut i småbåt.</string>
+
+    <string name="consequence_placeholder">Middels høye bølger.</string>
+
+    <string name="time_period_placeholder">Pågår nå, faren over tirsdag 20. april 19:00</string>
+
+    <string name="save_changes_clickable_text">LAGRE</string>
+
+    <string name="delete_place_clickable_text">SLETT</string>
+
+    <string name="abort_clickable_text">AVBRYT</string>
+
+    <string name="change_name">ENDRE NAVN</string>
+
+    <string name="change_name_bar_hint">Navn</string>
+
+    <string name="red_color_mark_icon_content_description">Red color mark icon</string>
+
+    <string name="yellow_color_mark_icon_content_description">Yellow color mark icon</string>
+
+    <string name="green_color_mark_icon_content_description">Green color mark icon</string>
+
+    <string name="pink_color_mark_icon_content_description">Pink color mark icon</string>
+
+    <string name="purple_color_mark_icon_content_description">Purple color mark icon</string>
+
+    <string name="blue_color_mark_icon_content_description">Blue color mark icon</string>
+
+    <string name="navy_blue_color_mark_icon_content_description">Navy blue color mark icon</string>
+
+    <string name="orange_color_mark_icon_content_description">Orange color mark icon</string>
+
+    <string name="dismiss_icon_content_description">Dismiss icon</string>
+
+    <string name="add_new_place_bar_hint">Legg til nytt sted</string>
+
+    <string name="add_place_clickable_icon_content_description">Add place button</string>
+
+    <string name="previous_alert_clickable_icon_content_description">Previous alert button</string>
+
+    <string name="next_alert_clickable_icon_content_description">Next alert button</string>
+
+    <string name="search_icon_content_description">Search icon</string>
+
+    <string name="gps_clickable_icon_content_description">Follow my location on/off button</string>
+
+    <string name="welcome_text">Velkommen</string>
+
+    <string name="position_icon_content_description">Position Icon</string>
+
+    <string name="location_permission_text">Tillater du at applikasjonen får tilgang til og lagrer enhetens posisjon?</string>
+
+    <string name="grant_permission_text">TILLAT NÅR APPEN BRUKES</string>
+
+    <string name="deny_permission_text">IKKE TILLAT</string>
+
+    <string name="empty_list_message_text">Legg til steder for muligheten til å <b>sammenligne værdata</b> og se hvor været er innenfor <b>dine preferanser!</b></string>
+
+    <string name="empty_list_message_add_icon_content_description">Add place icon</string>
+
+    <string name="gps_message_text_line1">Du har ikke aktivert GPS</string>
+
+    <string name="gps_message_text_line2">Trykk her eller gå til innstillinger for å aktivere</string>
+
+    <string name="profile_example_text">Eksempel sted: nedbørutenfor preferanse</string>
+
+    <string name="example_rain_value">10</string>
+
+    <string name="time_range_placeholder">kl 06:00 – 12:00</string>
+
+    <string name="day_placeholder">i dag</string>
+
+    <string name="date_placeholder">29. april</string>
+
+    <string name="forecast_header">Værprognose for</string>
+
+    <string name="mm_text_profile">mm</string>
+
+    <string name="wave_height_example_value">2</string>
+
+    <string name="wve_example_unit_profile">m</string>
+
+    <string name="wind_example_value">0.0</string>
+
+    <string name="wind_example_unit">m/s</string>
+
+    <string name="temp_example_value">11</string>
+
+    <string name="temp_example_unit">m</string>
+
+    <string name="alert_explenation_profile">Farevarsler vil dukke opp uavhengig av dine instillinger</string>
+
+    <string name="wind_speed_profile">Vindhastighet</string>
+
+    <string name="wind_speed_range_profile">0–30 m/s</string>
+
+    <string name="wave_height_profile">Bølgehøyde</string>
+
+    <string name="wave_height_range_profile">0–10 m</string>
+
+    <string name="temp_profile">Temperatur</string>
+
+    <string name="temp_range_profile">-20–40 ℃</string>
+
+    <string name="rain_profile">Nedbør</string>
+
+    <string name="rain_range_profile">0–30 mm/h</string>
+
+    <string name="location_description_settings">Tillatelse til å finne posisjon og lagre posisjon lokalt på din enhet.</string>
+
+    <string name="location_warning_settings">Andre applikasjoner vil kunne få tillgang til din siste kjente posisjon når denn funksjonen er skrudd på.</string>
+
+    <string name="allow_location_services_text_settings">Tillat stedstjenester</string>
+
+    <string name="change_settings">Endre</string>
+
+    <string name="location_services_off_settings">Stedstjenester er av</string>
+
+    <string name="location_services_on_settings">Stedstjenester er på</string>
+
+    <string name="delete_point_button">Delete point button</string>
+
+    <string name="close_window_button">Close window button</string>
+
+    <string name="lat_value">Lat value</string>
+
+    <string name="long_value">Long value</string>
+
+    <string name="fullscreen_map">Fullscreen map</string>
+
+    <string name="save_point_button">Save point button</string>
+
+    <string name="orange_colored_rain_icon">Orange colored rain icon</string>
+
+    <string name="alert_icon">Alert icon</string>
+
+    <string name="user_location_off">Du har skrudd av stedstjenester og denne funksjonen vil ikke kunne brukes før du skrur stedstjenester på igjen i instillinger.</string>
+
+    <string name="user_location_permission_granted">Stedstjenester er nå skrudd på</string>
+
+    <string name="user_location_permission_not_granted_mob">Stedstjenester er skrudd av, og denne funksjonen vil ikke være tilgjengelig</string>
+
+    <string name="text_placeholder_1">TEKST 1</string>
+
+    <string name="text_placeholder_2">TEKST 2</string>
+</resources>

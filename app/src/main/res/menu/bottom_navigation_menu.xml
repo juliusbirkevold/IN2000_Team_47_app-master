@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_weather_list"
+        android:enabled="true"
+        android:icon="@drawable/dahsboard_icon_figma"
+        android:title="@string/navigation_weather_list_title"/>
+    <item
+        android:id="@+id/navigation_map"
+        android:enabled="true"
+        android:icon="@drawable/map_icon_figma"
+        android:title="@string/navigation_map_title" />
+    <item
+        android:id="@+id/navigation_weather_profile"
+        android:enabled="true"
+        android:icon="@drawable/profile_icon_figma"
+        android:title="@string/navigation_weather_profile_title"/>
+    <item
+        android:id="@+id/navigation_emergency"
+        android:enabled="true"
+        android:icon="@drawable/emergency_info_figma"
+        android:title="@string/navigation_emergency_title" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:enabled="true"
+        android:icon="@drawable/setings_icon_figma"
+        android:title="@string/navigation_settings_title" />
+</menu>

@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IN2000_Team_47_App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/titleBlue</item> <!-- @color/purple_500 -->
+        <item name="colorPrimaryVariant">@color/titleBlue</item> <!-- @color/purple_700 -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/titleBlue</item>
+        <!-- Customize your theme here. -->
+        <item name="android:ambientShadowAlpha">0.001</item>
+        <item name="android:spotShadowAlpha">0.07</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/titleBlue</item>
+        <item name="android:windowBackground">@color/background_blue</item>
+    </style>
+
+</resources>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clickPointConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/add_place_bg"
+    tools:context=".frontend.MainActivity.ClickPointDialogFragment">
+
+    <TextView
+        android:id="@+id/clickPointLocationName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/place_name_placeholder"
+        android:textAlignment="center"
+        android:textColor="@color/titleBlue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/clickPointDeleteIcon"
+        app:layout_constraintStart_toEndOf="@+id/clickPointDismissIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clickPointPrecipitationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/clickPointWaveHeightLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickPointCoordinatesLayout">
+
+        <ImageView
+            android:id="@+id/clickPointPrecipitationIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/precipitation_icon_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rain_icon_figma" />
+
+        <TextView
+            android:id="@+id/clickPointPrecipitationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/precipitation_placeholder"
+            android:textColor="@color/titleBlue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointPrecipitationIcon" />
+
+        <TextView
+            android:id="@+id/clickPointPrecipitationUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/precipitation_unit"
+            android:textColor="@color/titleBlue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointPrecipitationText" />
+
+        <View
+            android:id="@+id/clickPointPrecipitationUnderline"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/warningOrange"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/clickPointPrecipitationUnit"
+            app:layout_constraintStart_toStartOf="@id/clickPointPrecipitationUnit"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointPrecipitationUnit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clickPointWaveHeightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/clickPointWindLayout"
+        app:layout_constraintStart_toEndOf="@+id/clickPointPrecipitationLayout"
+        app:layout_constraintTop_toTopOf="@+id/clickPointPrecipitationLayout">
+
+        <ImageView
+            android:id="@+id/clickPointWaveHeightIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/wave_icon_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/wave_height_icon_figma" />
+
+        <TextView
+            android:id="@+id/clickPointWaveHeightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/wave_height_placeholder"
+            android:textColor="@color/titleBlue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointWaveHeightIcon" />
+
+        <TextView
+            android:id="@+id/clickPointWaveHeightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/wave_height_unit"
+            android:textColor="@color/titleBlue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointWaveHeightText" />
+
+        <View
+            android:id="@+id/clickPointWaveHeightUnderline"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/warningOrange"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/clickPointWaveHeightUnit"
+            app:layout_constraintStart_toStartOf="@id/clickPointWaveHeightUnit"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointWaveHeightUnit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clickPointWindLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/clickPointTemperatureLayout"
+        app:layout_constraintStart_toEndOf="@+id/clickPointWaveHeightLayout"
+        app:layout_constraintTop_toTopOf="@+id/clickPointWaveHeightLayout">
+
+        <ImageView
+            android:id="@+id/clickPointWindIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/wind_icon_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_round_air_24" />
+
+        <TextView
+            android:id="@+id/clickPointWindText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/wind_speed_placeholder"
+            android:textColor="@color/titleBlue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointWindIcon" />
+
+        <TextView
+            android:id="@+id/clickPointWindUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/wind_speed_unit"
+            android:textColor="@color/titleBlue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointWindText" />
+
+        <View
+            android:id="@+id/clickPointWindUnderline"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/warningOrange"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/clickPointWindUnit"
+            app:layout_constraintStart_toStartOf="@id/clickPointWindUnit"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointWindUnit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clickPointTemperatureLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clickPointWindLayout"
+        app:layout_constraintTop_toTopOf="@+id/clickPointWindLayout">
+
+        <ImageView
+            android:id="@+id/clickPointTemperatureIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/temperature_icon_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_cloud_queue_24" />
+
+        <TextView
+            android:id="@+id/clickPointTemperatureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/temperature_placeholder"
+            android:textColor="@color/navy_blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointTemperatureIcon" />
+
+        <TextView
+            android:id="@+id/clickPointTemperatureUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="@string/temperature_unit"
+            android:textColor="@color/navy_blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointTemperatureText" />
+
+        <View
+            android:id="@+id/clickPointTemperatureUnderline"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/warningOrange"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/clickPointTemperatureUnit"
+            app:layout_constraintStart_toStartOf="@id/clickPointTemperatureUnit"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointTemperatureUnit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/clickPointDeleteIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/delete_point_button"
+        android:src="@drawable/ic_round_delete_forever_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/clickPointDismissIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/close_window_button"
+        android:src="@drawable/ic_round_close_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clickPointCoordinatesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickPointLocationName">
+
+        <TextView
+            android:id="@+id/clickPointLatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lat"
+            android:textColor="@color/coordinates_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/clickPointLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/lat_value"
+            android:text="@string/latitude_placeholder"
+            android:textColor="@color/coordinates_blue"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/clickPointLatText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/clickPointLonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lon"
+            android:textColor="@color/coordinates_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointLatText" />
+
+        <TextView
+            android:id="@+id/clickPointLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/long_value"
+            android:text="@string/longitude_placeholder"
+            android:textColor="@color/coordinates_blue"
+            app:layout_constraintStart_toStartOf="@+id/clickPointLatitude"
+            app:layout_constraintTop_toBottomOf="@+id/clickPointLatitude" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

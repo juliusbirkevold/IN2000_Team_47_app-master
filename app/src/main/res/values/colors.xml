@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+
+    <color name="purple_700">#FF3700B3</color>
+
+    <color name="teal_200">#FF03DAC5</color>
+
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="mapboxGreen">#00FF00</color>
+
+    <color name="red">#F44336</color>
+
+    <color name="navy_blue">#232396</color>
+
+    <color name="coolBlue">#197BE4</color>
+
+    <color name="seekBarBlueLight">#BEC2E3</color>
+
+    <color name="seekBarBlueLight2">#7F839E</color>
+
+    <color name="marker_red">#C2000B</color>
+
+    <color name="marker_yellow">#D6C000</color>
+
+    <color name="marker_green">#32C200</color>
+
+    <color name="marker_pink">#B485B2</color>
+
+    <color name="marker_purple">#763089</color>
+
+    <color name="marker_navy_blue">#232196</color>
+
+    <color name="marker_blue">#197BE4</color>
+
+    <color name="marker_orange">#D17D00</color>
+
+    <color name="place_with_alerts_bg">#FFEBB9</color>
+
+    <color name="element_blue">#BDE4F4</color>
+
+    <color name="delteRed">#BD0000</color>
+
+    <color name="coordinates_blue">#197BE4</color>
+
+    <color name="navigation_blue">#C3DBDC</color>
+
+    <color name="titleBlue">#0B005F</color>
+
+    <color name="warningOrange">#FC7609</color>
+
+    <color name="warningYellowBg">#FFE7AB</color>
+
+    <color name="background_blue">#C3DBDC</color>
+</resources>
